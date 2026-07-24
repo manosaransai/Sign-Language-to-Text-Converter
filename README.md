@@ -57,7 +57,11 @@ Debug/
 
 ---
 
-## 📷 Hardware Images
+## 📊 System Block Diagram
+
+![System Block Diagram](block_diagram.png)
+
+---
 
 ## 📷 Hardware Prototype
 
