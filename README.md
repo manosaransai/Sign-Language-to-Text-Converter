@@ -59,7 +59,9 @@ Debug/
 
 ## 📷 Hardware Images
 
-Hardware images will be added soon.
+## 📷 Hardware Prototype
+
+![Hardware Prototype](hardware_prototype.jpg)
 
 ---
 
