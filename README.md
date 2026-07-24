@@ -6,14 +6,16 @@ This project is an STM32F446RE-based Sign Language to Text Converter that recogn
 ---
 
 ## ✨ Features
-- Real-time sign language recognition
-- Flex sensor-based finger detection
-- MPU6050 motion sensing
-- OLED text display
-- Bluetooth (HM-10)
-- Wi-Fi (ESP8266)
-- Embedded C firmware
-- STM32 HAL Drivers
+| Specification        | Details                      |
+| -------------------- | ---------------------------- |
+| Microcontroller      | STM32F446RE                  |
+| Programming Language | Embedded C                   |
+| IDE                  | STM32CubeIDE                 |
+| Sensors              | 5 Flex Sensors, MPU6050      |
+| Display              | SSD1306 OLED                 |
+| Communication        | BLE (HM-10), Wi-Fi (ESP8266) |
+| Machine Learning     | KNN                          |
+| Output               | Text and Speech              |
 
 ---
 
@@ -39,13 +41,33 @@ This project is an STM32F446RE-based Sign Language to Text Converter that recogn
 
 ## 📁 Project Structure
 
-```
-Core/
-Drivers/
-Debug/
-```
+## 📂 Project Structure
 
----
+```text
+Sign-Language-to-Text-Converter
+│
+├── Core/
+│   ├── Inc/                 # Header files
+│   ├── Src/                 # Source code
+│   └── Startup/             # Startup files
+│
+├── Drivers/
+│   ├── CMSIS/               # ARM CMSIS libraries
+│   └── STM32F4xx_HAL_Driver/# STM32 HAL drivers
+│
+├── Debug/                   # Build output files
+│
+├── .settings/               # STM32CubeIDE settings
+├── .project                 # Eclipse project file
+├── .cproject                # Build configuration
+├── .mxproject               # STM32CubeMX configuration
+├── STM32F446RETX_FLASH.ld   # Flash linker script
+├── STM32F446RETX_RAM.ld     # RAM linker script
+├── SignLanguage.ioc         # STM32CubeMX project
+├── README.md                # Project documentation
+├── hardware_prototype.jpg   # Hardware prototype image
+└── block_diagram.png        # System block diagram
+```
 
 ## 🚀 How to Build
 
